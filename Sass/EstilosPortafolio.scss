@@ -1,0 +1,54 @@
+@import "barraDeNavegacion";
+  
+p { 
+    line-height: 1.5;
+}
+  
+  
+main {
+    background-color: rgb(1,45,84);
+}
+  
+.menu {
+   height: 49px;
+  
+}
+  
+
+.principal {
+    height: 200px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+.pri{
+    color: #fff;
+    font-size: 40px;
+    margin: 14px 0px;
+    border-bottom: 2px solid  rgba(0, 255, 255, 0.959);
+    padding-bottom: 10px;
+}
+
+.principal_span {
+  color: rgba(0, 255, 255, 0.959);
+  padding-bottom: 10px;
+  border-bottom: 4px solid #fff;
+}
+
+.pri:hover {
+  animation: princi 1s;
+
+}
+
+@keyframes princi {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

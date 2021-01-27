@@ -1,0 +1,43 @@
+* { padding: 0px; margin: 0px; font-family: 'Open Sans', sans-serif; }
+
+p { line-height: 1.5; }
+
+a:visited { color: #ffffff; }
+
+a:visited:hover { color: #070047; }
+
+a:link { color: #ffffff; text-decoration: none; }
+
+.menu { height: 49px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+header { background-color: #1571a9; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
+
+header:hover { background-color: #4f3ee7; }
+
+.menuEdit { border-left: 1px white solid; }
+
+ul { list-style: none; font-size: 0; color: #977878; margin-bottom: 0rem; }
+
+li { text-align: center; display: inline; padding: 0px 14px 0px 14px; font-size: 18px; border-right: 1px white solid; }
+
+ul ul { position: absolute; display: none; }
+
+ul ul li { display: block; }
+
+ul li:hover ul { display: block; }
+
+.col.text-center { color: #fff; background-color: darkslategrey; height: 150px; display: -ms-grid; display: grid; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.container-h1 { font-size: 30px; }
+
+.col_2.text-center.bg-warning { color: #fff; font-size: 30px; height: 80px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.col_3 { float: left; width: 25%; padding: 20px; }
+
+@media screen and (max-width: 600px) { .centerBlock, .col_2 { font-size: 25px; }
+  .container-h4 { font-size: 15px; } }
+
+@media screen and (max-width: 600px) { .col_3 { width: 100%; } }
+
+@media screen and (max-width: 992px) { .col_3 { width: 50%; font-size: 20px; } }
+/*# sourceMappingURL=estilosContacto.css.map */

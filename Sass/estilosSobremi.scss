@@ -1,0 +1,112 @@
+@import "barraDeNavegacion";
+%display-centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$margin: 10px;
+  
+p { 
+    line-height: 1.5;
+  }
+  
+main {
+  background-color: rgb(1,45,84);
+  }
+
+.presentacion {
+  height: 600px;
+  @extend %display-centrar;
+    h1 {
+      width: 700px;
+    }
+}
+
+.presentacion_texto-h4, .presentacion_texto-h1 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.yo {
+  height: 700px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 500px;
+  grid-template-areas:
+        "title title title"
+        "izquierda centro derecha";
+  row-gap: 10px;
+  column-gap: 15px;
+}
+
+.yo_child_nombre { 
+  grid-area: title;
+  @extend %display-centrar;
+
+    h1 {
+      color: #000;
+      text-align: center;
+    }
+    h4 {
+      color: #000;
+      text-align: center;
+    }
+}
+
+
+
+.yo_childIzquierda {
+  grid-area: izquierda;
+
+    h2 {
+      margin: $margin;
+      text-align: center
+    }
+}
+
+.yo_childIzquierda h2 {
+  text-align: center;
+}
+
+.yo_childCentro {
+  grid-area: centro;
+  text-align: center;
+
+    h4 {
+      margin: 20px 0px 20px 0px;
+    }
+    img {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+    }
+}
+
+.yo_childDerecha {
+  grid-area: derecha;
+
+    h2 {
+      margin: $margin;
+      text-align: center;
+    }
+}
+
+.presentacion_texto {
+  animation: titulo 1s;
+
+}
+  
+@keyframes titulo {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+  

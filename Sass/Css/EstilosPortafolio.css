@@ -1,0 +1,48 @@
+* { padding: 0px; margin: 0px; font-family: 'Open Sans', sans-serif; }
+
+p { line-height: 1.5; }
+
+a:visited { color: #ffffff; }
+
+a:visited:hover { color: #070047; }
+
+a:link { color: #ffffff; text-decoration: none; }
+
+.menu { height: 49px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+header { background-color: #1571a9; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
+
+header:hover { background-color: #4f3ee7; }
+
+.menuEdit { border-left: 1px white solid; }
+
+ul { list-style: none; font-size: 0; color: #977878; margin-bottom: 0rem; }
+
+li { text-align: center; display: inline; padding: 0px 14px 0px 14px; font-size: 18px; border-right: 1px white solid; }
+
+ul ul { position: absolute; display: none; }
+
+ul ul li { display: block; }
+
+ul li:hover ul { display: block; }
+
+p { line-height: 1.5; }
+
+main { background-color: #012d54; }
+
+.menu { height: 49px; }
+
+.principal { height: 200px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.pri { color: #fff; font-size: 40px; margin: 14px 0px; border-bottom: 2px solid rgba(0, 255, 255, 0.959); padding-bottom: 10px; }
+
+.principal_span { color: rgba(0, 255, 255, 0.959); padding-bottom: 10px; border-bottom: 4px solid #fff; }
+
+.pri:hover { -webkit-animation: princi 1s; animation: princi 1s; }
+
+@-webkit-keyframes princi { from { -webkit-transform: scale(1); transform: scale(1); }
+  to { -webkit-transform: scale(1.1); transform: scale(1.1); } }
+
+@keyframes princi { from { -webkit-transform: scale(1); transform: scale(1); }
+  to { -webkit-transform: scale(1.1); transform: scale(1.1); } }
+/*# sourceMappingURL=EstilosPortafolio.css.map */
