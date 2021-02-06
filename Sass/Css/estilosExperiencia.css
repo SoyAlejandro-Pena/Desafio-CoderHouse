@@ -26,9 +26,15 @@ ul ul li { display: block; }
 
 ul li:hover ul { display: block; }
 
-.child_Espacio2-descripcion, .child_Espacio3-descripcion { color: #000; width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+@media (max-width: 600px) { ul { padding-left: 0; }
+  ul li { font-size: 15px; } }
 
-.child_Espacio2-descripcion p, .child_Espacio3-descripcion p { width: 80%; }
+@media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
+  ul li { font-size: 13px; } }
+
+.child_Espacio2-p, .child_Espacio3-p, .child_Espacio4-p { color: #000; width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.child_Espacio2-p p, .child_Espacio3-p p, .child_Espacio4-p p { width: 80%; }
 
 .child_ImgDere { width: 500px; height: 400px; }
 
@@ -38,27 +44,29 @@ ul li:hover ul { display: block; }
 
 .title_child { color: #FFF; -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: title; background-color: #012d54; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-h1.title_child-h1 { border: 3px solid #FFF; text-align: center; padding: 10px 10px; }
+h1.title_child-h1 { border: 3px solid #FFF; text-align: center; padding: 10px; }
 
-.Father_Espacio1 { height: 500px; display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; }
+.Father_Espacio { height: 500px; display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; }
 
-.Father_Espacio1 .child_Espacio1-empresa { width: 50%; background-color: #FEF9E7; }
+.Father_Espacio .child_Espacio-empresa { width: 50%; background-color: #FEF9E7; }
 
-.Father_Espacio1 .child_Espacio1-empresa .Espacio1_h2 { color: #000; margin: 15px 0px; font-size: 20px; }
+.Father_Espacio .child_Espacio-empresa .Espacio_h2 { color: #000; margin: 15px 0px; font-size: 20px; }
 
-.Father_Espacio1 .child_Espacio1-empresa .Espacio1_div-img { height: 100%; }
+.Father_Espacio .child_Espacio-empresa .Espacio_div-img { height: 100%; }
 
-.Father_Espacio1 .child_Espacio1-empresa .child_ImgIzq { width: 500px; height: 400px; -webkit-box-shadow: -8px 8px 0px 4px #157CF0; box-shadow: -8px 8px 0px 4px #157CF0; }
+.Father_Espacio .child_Espacio-empresa .child_ImgIzq { width: 500px; height: 400px; -webkit-box-shadow: -8px 8px 0px 4px #157CF0; box-shadow: -8px 8px 0px 4px #157CF0; }
 
-.Father_Espacio1 .child_Espacio1-descripcion { color: #000; background-color: #157CF0; width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.Father_Espacio .child_Espacio-p { color: #000; background-color: #157CF0; width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.Father_Espacio1 .child_Espacio1-descripcion p { width: 80%; }
-
-.child_Espacio2-descripcion { background-color: aquamarine; }
-
-.child_Espacio3-descripcion { background-color: #bedd4b; }
+.Father_Espacio .child_Espacio-p p { width: 80%; }
 
 .child_ImgDere { -webkit-box-shadow: 8px 8px 0px 4px #157CF0; box-shadow: 8px 8px 0px 4px #157CF0; }
+
+.child_Espacio2-p { background-color: aquamarine; }
+
+.child_Espacio3-p { background-color: #bedd4b; }
+
+.child_Espacio4-p { background-color: #4bc0dd; }
 
 .title_child-h1 { width: 700px; }
 
@@ -77,4 +85,13 @@ h1.title_child-h1 { border: 3px solid #FFF; text-align: center; padding: 10px 10
   100% { opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+
+@media (max-width: 780px) { .Father_Espacio { display: inline; }
+  .Father_Espacio .child_Espacio-empresa { width: 100%; height: 500px; }
+  .Father_Espacio .child_Espacio-empresa .Espacio_div-img .child_ImgIzq { width: 350px; height: 300px; }
+  .Father_Espacio .child_Espacio-empresa .Espacio_h2 { margin: 0px; position: relative; top: 25px; }
+  .Father_Espacio .Espacio_div-img { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 400px; }
+  .Father_Espacio .child_ImgDere { width: 350px; height: 300px; }
+  .Father_Espacio .child_Espacio-p, .Father_Espacio .child_Espacio2-p, .Father_Espacio .child_Espacio3-p, .Father_Espacio .child_Espacio4-p { width: 100%; height: 500px; }
+  h1.title_child-h1 { width: 350px; } }
 /*# sourceMappingURL=estilosExperiencia.css.map */

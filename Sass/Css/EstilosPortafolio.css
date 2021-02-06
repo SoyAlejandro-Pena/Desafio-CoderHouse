@@ -26,19 +26,37 @@ ul ul li { display: block; }
 
 ul li:hover ul { display: block; }
 
+@media (max-width: 600px) { ul { padding-left: 0; }
+  ul li { font-size: 15px; } }
+
+@media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
+  ul li { font-size: 13px; } }
+
+.col .Juntos-btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
 p { line-height: 1.5; }
 
-main { background-color: #012d54; }
+.btn { background-color: #4bc0dd; }
 
 .menu { height: 49px; }
 
-.principal { height: 200px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.principal { height: 200px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-color: #012d54; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .pri { color: #fff; font-size: 40px; margin: 14px 0px; border-bottom: 2px solid rgba(0, 255, 255, 0.959); padding-bottom: 10px; }
 
-.principal_span { color: rgba(0, 255, 255, 0.959); padding-bottom: 10px; border-bottom: 4px solid #fff; }
+.principal_span { color: rgba(0, 255, 255, 0.959); padding-bottom: 11px; border-bottom: 4px solid #fff; }
 
 .pri:hover { -webkit-animation: princi 1s; animation: princi 1s; }
+
+.card:hover { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: 0.6; }
+
+.col { margin-top: 40px; padding: 0px 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.col .JuntosAsombroso { max-width: 500px; font-size: 65px; text-align: center; margin-left: 60px; }
+
+.col .Juntos-btn { width: 100%; }
+
+.col .Juntos-btn .btn { width: 200px; height: 50px; font-size: 20px; }
 
 @-webkit-keyframes princi { from { -webkit-transform: scale(1); transform: scale(1); }
   to { -webkit-transform: scale(1.1); transform: scale(1.1); } }
