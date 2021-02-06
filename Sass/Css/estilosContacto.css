@@ -26,5 +26,15 @@ ul ul li { display: block; }
 
 ul li:hover ul { display: block; }
 
+@media (max-width: 600px) { ul { padding-left: 0; }
+  ul li { font-size: 15px; } }
+
+@media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
+  ul li { font-size: 13px; } }
+
+.text-contacto { color: #fff; font-size: 32px; height: 400px; margin: 10px 0px 20px 0px; background-color: #050542; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.text-contacto h1 { width: 80%; }
+
 .form-group { margin: 10px 0px 10px 0px; }
 /*# sourceMappingURL=estilosContacto.css.map */
