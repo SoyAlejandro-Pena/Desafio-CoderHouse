@@ -1,12 +1,17 @@
 @import "barraDeNavegacion";
-  
+ 
+%CentrarContenido {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
 p { 
     line-height: 1.5;
 }
-  
-  
-main {
-    background-color: rgb(1,45,84);
+
+.btn {
+  background-color: #4bc0dd;
 }
   
 .menu {
@@ -18,6 +23,7 @@ main {
 .principal {
     height: 200px;
     flex-direction: column;
+    background-color: rgb(1,45,84);
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -35,13 +41,43 @@ main {
 
 .principal_span {
   color: rgba(0, 255, 255, 0.959);
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   border-bottom: 4px solid #fff;
 }
 
 .pri:hover {
   animation: princi 1s;
+}
 
+.card:hover {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.col {
+  margin-top: 40px;
+  padding: 0px 30px;
+  display: flex;
+
+  .JuntosAsombroso {
+    max-width: 500px;
+    font-size: 65px;
+    text-align: center;
+    margin-left: 60px;
+  }
+
+  .Juntos-btn {
+    @extend %CentrarContenido;
+    width: 100%;
+
+    .btn {
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+    }
+
+  }
+  
 }
 
 @keyframes princi {

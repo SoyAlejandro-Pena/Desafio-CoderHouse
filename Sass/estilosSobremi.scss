@@ -4,8 +4,12 @@
   justify-content: center;
   align-items: center;
 }
+%ColorTextoH1-H4 {
+  color: #000;
+  text-align: center
+}
 $margin: 10px;
-  
+ 
 p { 
     line-height: 1.5;
   }
@@ -37,25 +41,33 @@ main {
   grid-template-areas:
         "title title title"
         "izquierda centro derecha";
-  row-gap: 10px;
+  row-gap: 15px;
   column-gap: 15px;
+
+    p {
+      margin: 30px;
+    }
 }
 
 .yo_child_nombre { 
   grid-area: title;
   @extend %display-centrar;
 
-    h1 {
-      color: #000;
-      text-align: center;
+    hr {
+      color:#000;
+      width: 50%;
+      margin:auto;
+      height: 3px;
     }
-    h4 {
-      color: #000;
-      text-align: center;
+
+    h1, h4 {
+     @extend %ColorTextoH1-H4;
+    }
+    
+    h1 {
+      padding-top: 20px;
     }
 }
-
-
 
 .yo_childIzquierda {
   grid-area: izquierda;
@@ -78,6 +90,7 @@ main {
       margin: 20px 0px 20px 0px;
     }
     img {
+      margin-top: 5px;
       height: 250px;
       width: 250px;
       border-radius: 50%;
@@ -97,7 +110,28 @@ main {
   animation: titulo 1s;
 
 }
-  
+
+.especialidad_text, .Conoce {
+  color: #fff;  
+}
+
+.especialidad_text {
+  margin-top: 10px;
+}
+
+.Conoce {
+  background-color:rgb(75, 192, 221);
+  height: 100px;
+  font-size: 20px;
+  @extend %display-centrar;
+  position: relative;
+  bottom: 40px;
+}
+
+.UnPocoMasDeMi-title {
+  padding: 15px;
+}
+
 @keyframes titulo {
   0% {
     opacity: 0;
