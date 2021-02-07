@@ -4,21 +4,19 @@ p { line-height: 1.5; }
 
 a:visited { color: #ffffff; }
 
-a:visited:hover { color: #070047; }
+a:link { color: #fff; text-decoration: none; }
 
-a:link { color: #ffffff; text-decoration: none; }
+a:visited:hover { color: #fff; }
 
-.menu { height: 49px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+li:hover { border-bottom: 2px solid #ffa600; }
+
+.menu { height: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 header { background-color: #1571a9; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
 
-header:hover { background-color: #4f3ee7; }
-
-.menuEdit { border-left: 1px white solid; }
-
 ul { list-style: none; font-size: 0; color: #977878; margin-bottom: 0rem; }
 
-li { text-align: center; display: inline; padding: 0px 14px 0px 14px; font-size: 18px; border-right: 1px white solid; }
+li { text-align: center; display: inline; padding: 15.5px 14px; font-size: 18px; }
 
 ul ul { position: absolute; display: none; }
 
@@ -38,8 +36,6 @@ p { line-height: 1.5; }
 
 .btn { background-color: #4bc0dd; }
 
-.menu { height: 49px; }
-
 .principal { height: 200px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-color: #012d54; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .pri { color: #fff; font-size: 40px; margin: 14px 0px; border-bottom: 2px solid rgba(0, 255, 255, 0.959); padding-bottom: 10px; }
@@ -57,6 +53,8 @@ p { line-height: 1.5; }
 .col .Juntos-btn { width: 100%; }
 
 .col .Juntos-btn .btn { width: 200px; height: 50px; font-size: 20px; }
+
+.col .Juntos-btn .btn:hover { background-color: #5c0a5c; color: #fff; }
 
 @-webkit-keyframes princi { from { -webkit-transform: scale(1); transform: scale(1); }
   to { -webkit-transform: scale(1.1); transform: scale(1.1); } }

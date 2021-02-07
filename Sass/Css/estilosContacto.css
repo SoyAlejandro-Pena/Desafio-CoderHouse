@@ -4,21 +4,19 @@ p { line-height: 1.5; }
 
 a:visited { color: #ffffff; }
 
-a:visited:hover { color: #070047; }
+a:link { color: #fff; text-decoration: none; }
 
-a:link { color: #ffffff; text-decoration: none; }
+a:visited:hover { color: #fff; }
 
-.menu { height: 49px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+li:hover { border-bottom: 2px solid #ffa600; }
+
+.menu { height: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 header { background-color: #1571a9; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
 
-header:hover { background-color: #4f3ee7; }
-
-.menuEdit { border-left: 1px white solid; }
-
 ul { list-style: none; font-size: 0; color: #977878; margin-bottom: 0rem; }
 
-li { text-align: center; display: inline; padding: 0px 14px 0px 14px; font-size: 18px; border-right: 1px white solid; }
+li { text-align: center; display: inline; padding: 15.5px 14px; font-size: 18px; }
 
 ul ul { position: absolute; display: none; }
 
@@ -37,4 +35,10 @@ ul li:hover ul { display: block; }
 .text-contacto h1 { width: 80%; }
 
 .form-group { margin: 10px 0px 10px 0px; }
+
+.SaberMas { background-image: url("../../Imagenes/Contacto.jpg"); background-size: cover; color: #fff; }
+
+.SaberMas p { margin: 80px 50px; font-size: 20px; }
+
+.SaberMas h2 { margin: 40px 0px; font-size: 40px; text-align: center; }
 /*# sourceMappingURL=estilosContacto.css.map */

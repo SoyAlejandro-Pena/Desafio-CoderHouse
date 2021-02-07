@@ -12,17 +12,24 @@
     color: #ffffff;
   }
   
-  a:visited:hover {
-    color: rgb(7, 0, 71);
-  }
   
   a:link {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
   }
 
+  a:visited:hover {
+    color: #fff;
+  }
+
+  
+  li:hover{ 
+    border-bottom: 2px solid rgb(255, 166, 0);
+  }
+
+
   .menu {
-    height: 49px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,14 +43,6 @@
     width: 100%;
     z-index: 3000;
   }
-
-  header:hover {
-    background-color: rgb(79, 62, 231);
-  }
-
-  .menuEdit {
-    border-left: 1px white solid;
-  }
   
   ul {
     list-style: none;
@@ -55,9 +54,8 @@
   li {
     text-align: center;
     display: inline;
-    padding: 0px 14px 0px 14px;
-    font-size: 18px;   
-    border-right: 1px white solid;    
+    padding: 15.5px 14px;
+    font-size: 18px;       
   }
 
   
