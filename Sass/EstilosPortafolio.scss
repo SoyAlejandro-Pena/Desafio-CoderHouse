@@ -1,5 +1,5 @@
 @import "barraDeNavegacion";
- 
+@import "footer";
 %CentrarContenido {
   display: flex;
   justify-content: center;
@@ -51,34 +51,37 @@ p {
   opacity: 0.6;
 }
 
-.col {
+.container-Juntos {
+  margin: 100px 0px;
+}
+
+.JuntosPodemos, .col {
   margin-top: 40px;
   padding: 0px 30px;
-  display: flex;
 
   .JuntosAsombroso {
     max-width: 500px;
     font-size: 65px;
     text-align: center;
-    margin-left: 60px;
+    margin: auto;
+  }
+}
+
+.Juntos-btn {
+  @extend %CentrarContenido;
+  width: 100%;
+
+  .btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
   }
 
-  .Juntos-btn {
-    @extend %CentrarContenido;
-    width: 100%;
-
-    .btn {
-      width: 200px;
-      height: 50px;
-      font-size: 20px;
-    }
-
-    .btn:hover {
-      background-color: rgb(92, 10, 92);
-      color: #fff;
-    }
-  } 
-}
+  .btn:hover {
+    background-color: rgb(92, 10, 92);
+    color: #fff;
+  }
+} 
 
 @keyframes princi {
   from {
@@ -87,4 +90,8 @@ p {
   to {
     transform: scale(1.1);
   }
+}
+
+.imgRedes {
+  margin: 0px 5px;
 }

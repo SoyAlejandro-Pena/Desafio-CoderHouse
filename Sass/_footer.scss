@@ -1,0 +1,14 @@
+.container-footer {
+    background-color: rgb(1,45,84);
+    color: #fff;
+    margin-top: 10px;
+
+     h6 {
+      margin-top: 10px;
+      }
+}
+@media (max-width:  577px) {
+    .row-footer {
+        text-align: center;
+    }
+}

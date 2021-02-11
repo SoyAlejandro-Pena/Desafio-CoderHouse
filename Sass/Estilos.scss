@@ -1,4 +1,5 @@
 @import "barraDeNavegacion";
+@import "_footer";
  
 main {
     background-color: rgb(1,45,84);
@@ -137,9 +138,16 @@ main {
   }
   
   @media (max-width:  415px) {
+    .title-A {
+      font-size: 20px;
+    }
+
     .expertos_div {
       font-size: 35px;
     }
+    .expertos_span {
+      padding-bottom: 14px;
+    } 
   }
   
   

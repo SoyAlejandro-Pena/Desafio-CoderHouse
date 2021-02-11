@@ -1,4 +1,5 @@
 @import "barraDeNavegacion";
+@import "footer";
 %display-centrar {
   display: flex;
   justify-content: center;
@@ -116,7 +117,7 @@ main {
 }
 
 .especialidad_text {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .Conoce {
@@ -124,8 +125,7 @@ main {
   height: 100px;
   font-size: 20px;
   @extend %display-centrar;
-  position: relative;
-  bottom: 40px;
+  margin-top: -40px;
 }
 
 .UnPocoMasDeMi-title {
