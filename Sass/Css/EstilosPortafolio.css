@@ -8,7 +8,7 @@ a:link { color: #fff; text-decoration: none; }
 
 a:visited:hover { color: #fff; }
 
-li:hover { border-bottom: 2px solid #ffa600; }
+li:hover { border-bottom: 3px solid #ffa600; }
 
 .menu { height: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -30,7 +30,13 @@ ul li:hover ul { display: block; }
 @media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
   ul li { font-size: 13px; } }
 
-.col .Juntos-btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.container-footer { background-color: #012d54; color: #fff; margin-top: 10px; }
+
+.container-footer h6 { margin-top: 10px; }
+
+@media (max-width: 577px) { .row-footer { text-align: center; } }
+
+.Juntos-btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 p { line-height: 1.5; }
 
@@ -46,19 +52,23 @@ p { line-height: 1.5; }
 
 .card:hover { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: 0.6; }
 
-.col { margin-top: 40px; padding: 0px 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.container-Juntos { margin: 100px 0px; }
 
-.col .JuntosAsombroso { max-width: 500px; font-size: 65px; text-align: center; margin-left: 60px; }
+.JuntosPodemos, .col { margin-top: 40px; padding: 0px 30px; }
 
-.col .Juntos-btn { width: 100%; }
+.JuntosPodemos .JuntosAsombroso, .col .JuntosAsombroso { max-width: 500px; font-size: 65px; text-align: center; margin-left: 60px; }
 
-.col .Juntos-btn .btn { width: 200px; height: 50px; font-size: 20px; }
+.Juntos-btn { width: 100%; }
 
-.col .Juntos-btn .btn:hover { background-color: #5c0a5c; color: #fff; }
+.Juntos-btn .btn { width: 200px; height: 50px; font-size: 20px; }
+
+.Juntos-btn .btn:hover { background-color: #5c0a5c; color: #fff; }
 
 @-webkit-keyframes princi { from { -webkit-transform: scale(1); transform: scale(1); }
   to { -webkit-transform: scale(1.1); transform: scale(1.1); } }
 
 @keyframes princi { from { -webkit-transform: scale(1); transform: scale(1); }
   to { -webkit-transform: scale(1.1); transform: scale(1.1); } }
+
+.imgRedes { margin: 0px 5px; }
 /*# sourceMappingURL=EstilosPortafolio.css.map */

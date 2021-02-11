@@ -8,7 +8,7 @@ a:link { color: #fff; text-decoration: none; }
 
 a:visited:hover { color: #fff; }
 
-li:hover { border-bottom: 2px solid #ffa600; }
+li:hover { border-bottom: 3px solid #ffa600; }
 
 .menu { height: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -29,6 +29,12 @@ ul li:hover ul { display: block; }
 
 @media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
   ul li { font-size: 13px; } }
+
+.container-footer { background-color: #012d54; color: #fff; margin-top: 10px; }
+
+.container-footer h6 { margin-top: 10px; }
+
+@media (max-width: 577px) { .row-footer { text-align: center; } }
 
 .presentacion, .yo_child_nombre, .Conoce { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -74,9 +80,9 @@ main { background-color: #012d54; }
 
 .especialidad_text, .Conoce { color: #fff; }
 
-.especialidad_text { margin-top: 10px; }
+.especialidad_text { margin-top: 20px; }
 
-.Conoce { background-color: #4bc0dd; height: 100px; font-size: 20px; position: relative; bottom: 40px; }
+.Conoce { background-color: #4bc0dd; height: 100px; font-size: 20px; margin-top: -40px; }
 
 .UnPocoMasDeMi-title { padding: 15px; }
 

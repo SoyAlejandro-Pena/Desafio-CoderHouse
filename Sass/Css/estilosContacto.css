@@ -8,7 +8,7 @@ a:link { color: #fff; text-decoration: none; }
 
 a:visited:hover { color: #fff; }
 
-li:hover { border-bottom: 2px solid #ffa600; }
+li:hover { border-bottom: 3px solid #ffa600; }
 
 .menu { height: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -29,6 +29,12 @@ ul li:hover ul { display: block; }
 
 @media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
   ul li { font-size: 13px; } }
+
+.container-footer { background-color: #012d54; color: #fff; margin-top: 10px; }
+
+.container-footer h6 { margin-top: 10px; }
+
+@media (max-width: 577px) { .row-footer { text-align: center; } }
 
 .text-contacto { color: #fff; font-size: 32px; height: 400px; margin: 10px 0px 20px 0px; background-color: #050542; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

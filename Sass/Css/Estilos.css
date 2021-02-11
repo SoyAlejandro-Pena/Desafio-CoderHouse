@@ -8,7 +8,7 @@ a:link { color: #fff; text-decoration: none; }
 
 a:visited:hover { color: #fff; }
 
-li:hover { border-bottom: 2px solid #ffa600; }
+li:hover { border-bottom: 3px solid #ffa600; }
 
 .menu { height: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -29,6 +29,12 @@ ul li:hover ul { display: block; }
 
 @media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
   ul li { font-size: 13px; } }
+
+.container-footer { background-color: #012d54; color: #fff; margin-top: 10px; }
+
+.container-footer h6 { margin-top: 10px; }
+
+@media (max-width: 577px) { .row-footer { text-align: center; } }
 
 main { background-color: #012d54; }
 
@@ -78,7 +84,9 @@ footer { background-color: white; }
   to { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);
     opacity: 1; } }
 
-@media (max-width: 415px) { .expertos_div { font-size: 35px; } }
+@media (max-width: 415px) { .title-A { font-size: 20px; }
+  .expertos_div { font-size: 35px; }
+  .expertos_span { padding-bottom: 14px; } }
 
 /* COMIENZO DE LA PRACTICA  .divpadre { width: 500; height: 300px; background-color: tomato; display: flex; flex-direction: row; flex-wrap:  wrap; justify-content: space-evenly; /* align-items: baseline;   align-content:space-between; } .hijo1, .hijo2, .hijo3, .hijo4 { height: 100px; width: 40%; background-color: springgreen; } .hijo2, .hijo4 { background-color: steelblue; } .father { display: grid; height: 500px; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 100px 200px 100px; grid-template-areas: "header header header" "izquierda centro derecha" "footer footer footer"; grid-column-gap: 5px; grid-row-gap: 10px; background-color: gold; justify-items: center; align-items: end; align-content: space-around; }  .header { background-color: tan; grid-area: header; } .hijogrid1 { background-color: blue; grid-area: izquierda; } .hijogrid2 { background-color: cyan; grid-area: centro; align-self: center; justify-self: center; } .hijogrid3 { background-color: chocolate; grid-area: derecha; } .footer { background-color: rosybrown; grid-area: footer; } .footer_p { height: 400px; background-image: linear-gradient(to top, rgb(10, 73, 189), rgb(162, 0, 255)); } */
 /*# sourceMappingURL=Estilos.css.map */
