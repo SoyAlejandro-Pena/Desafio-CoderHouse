@@ -174,5 +174,27 @@
       width: 350px;
     }
   }
+  @media (max-width: 1050px) {
 
+    .child_ImgDere {
+        width: 350px;
+        height: 300px;
+    }
+  }
+
+ @media (max-width: 1050px) {
+    .Father_Espacio {
+
+      .child_Espacio-empresa {
+
+        .Espacio_div-img {
+
+          .child_ImgIzq {
+            width: 350px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }  
   

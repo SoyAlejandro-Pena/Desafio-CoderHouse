@@ -23,7 +23,8 @@ main {
   height: 600px;
   @extend %display-centrar;
     h1 {
-      width: 700px;
+      width: 80%;
+      margin: auto;
     }
 }
 
@@ -34,11 +35,10 @@ main {
 }
 
 .yo {
-  height: 700px;
+  margin: 30px 0px;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 500px;
   grid-template-areas:
         "title title title"
         "izquierda centro derecha";
@@ -143,4 +143,9 @@ main {
   }
 }
   
-  
+@media (max-width:750px) {
+  .yo {
+    display: flex;
+    flex-direction: column;
+  }
+}
