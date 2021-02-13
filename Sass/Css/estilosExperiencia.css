@@ -1,22 +1,28 @@
-* { padding: 0px; margin: 0px; font-family: 'Open Sans', sans-serif; }
+* { padding: 0px; margin: 0px; font-family: 'Amaranth', sans-serif; }
+
+div { letter-spacing: 1px; }
 
 p { line-height: 1.5; }
 
-a:visited { color: #ffffff; }
+a:visited { color: #fff; }
 
 a:link { color: #fff; text-decoration: none; }
 
 a:visited:hover { color: #fff; }
 
-li:hover { border-bottom: 3px solid #ffa600; }
-
-.menu { height: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 header { background-color: #1571a9; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
 
-ul { list-style: none; font-size: 0; color: #977878; margin-bottom: 0rem; }
+.navbar-light .navbar-nav .nav-link { color: #fff; }
 
-li { text-align: center; display: inline; padding: 15.5px 14px; font-size: 18px; }
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link { color: mediumspringgreen; }
+
+.navbar { padding-bottom: 0; padding-top: 0; }
+
+ul { list-style: none; font-size: 0; color: #fff; margin-bottom: 0rem; }
+
+li { text-align: center; display: inline; padding: 12px 14px; font-size: 18px; }
 
 ul ul { position: absolute; display: none; }
 
@@ -27,8 +33,7 @@ ul li:hover ul { display: block; }
 @media (max-width: 600px) { ul { padding-left: 0; }
   ul li { font-size: 15px; } }
 
-@media (max-width: 480px) { ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0; }
-  ul li { font-size: 13px; } }
+@media (max-width: 575px) { .navbar { padding-bottom: 0.5rem; padding-top: 0.5rem; } }
 
 .container-footer { background-color: #012d54; color: #fff; margin-top: 10px; }
 
@@ -98,4 +103,8 @@ h1.title_child-h1 { border: 3px solid #FFF; text-align: center; padding: 10px; }
   .Father_Espacio .child_ImgDere { width: 350px; height: 300px; }
   .Father_Espacio .child_Espacio-p, .Father_Espacio .child_Espacio2-p, .Father_Espacio .child_Espacio3-p, .Father_Espacio .child_Espacio4-p { width: 100%; height: 500px; }
   h1.title_child-h1 { width: 350px; } }
+
+@media (max-width: 1050px) { .child_ImgDere { width: 350px; height: 300px; } }
+
+@media (max-width: 1050px) { .Father_Espacio .child_Espacio-empresa .Espacio_div-img .child_ImgIzq { width: 350px; height: 300px; } }
 /*# sourceMappingURL=estilosExperiencia.css.map */
