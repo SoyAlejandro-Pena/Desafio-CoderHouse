@@ -43,21 +43,22 @@ main {
   }
   
   .expertos_div{
-    color: #000000;
+    color: rgb(1,45,84);
     font-size: 40px;
     margin: 14px 0px;
     border-bottom: 2px solid  rgba(0, 255, 255, 0.959);
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
   
   .expertos_span {
     color: rgba(0, 255, 255, 0.959);
     padding-bottom: 12px;
-    border-bottom: 4px solid #000;
+    border-bottom: 4px solid rgb(1,45,84);
   }
   
   .row.text-center {
     padding-top: 1em;
+    column-gap: 1em;
   }
   
   .especialidad_text {

@@ -1,21 +1,28 @@
 @import "barraDeNavegacion";
 @import "footer";
 %bloque-descripcion {
-    color: #000;
-    width: 50%;
+    color: #fff;
+    
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-
-    p {
-      width: 80%;
-    }
   }
-%TamañoImagenes {
+  
+  %TamañoImagenes {
       width: 500px;
       height: 400px;
   }  
+
+  %Centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    background-color: rgb(1,45,84);
+  }
 
   .child:hover {
      box-shadow: 1px 1px 4px 4px rgba(0, 255, 255, 0.959);
@@ -38,6 +45,12 @@
     align-items: center;
     justify-content: center;
   }
+
+  hr {
+    color: #fff;
+    width: 50%;
+    margin: auto;
+  }
   
   h1.title_child-h1 {
     border: 3px solid #FFF;
@@ -52,37 +65,31 @@
 
     .child_Espacio-empresa {
       width: 50%;
-      background-color: #FEF9E7;
-
-      .Espacio_h2 {
-        color: #000;
-        margin: 15px 0px;
-        font-size: 20px;
-      }
-
-      .Espacio_div-img {
-        height: 100%;
-      } 
+      height: 100%;
+      @extend %Centrar;
 
       .child_ImgIzq {
-        width: 500px;
-        height: 400px;
-        box-shadow: -8px 8px 0px 4px #157CF0;
+        @extend %TamañoImagenes;
+        box-shadow: -13px 13px 0px -2px  #157CF0;
+      }
+
+      .Disponible {
+        opacity: 0.3;
       }
 
     }
 
-    .child_Espacio-p {
-      color: #000;
-      background-color: #157CF0 ;
+    .child_Espacio {
+      color: #fff;
       width: 50%;
       display: flex;
       text-align: center;
       justify-content: center;
       align-items: center;
   
-      p {
+      .child_Espacio-p, .child_Espacio2-p, .child_Espacio3-p .child_Espacio4-p {
         width: 80%;
+        border-bottom: 3px solid #157CF0; 
       }
   
     }
@@ -90,97 +97,68 @@
 
   }
 
+/*EXTEND*/
   .child_ImgDere {
     @extend %TamañoImagenes;
-    box-shadow: 8px 8px 0px 4px #157CF0;
+    box-shadow: 13px 13px 0px -2px #157CF0;
   }
 
-  .child_Espacio2-p {
-    @extend %bloque-descripcion;
-    background-color: aquamarine;
-  }
-
-  .child_Espacio3-p {
-    @extend %bloque-descripcion;
-    background-color: rgb(190, 221, 75);
-  }
-
-  .child_Espacio4-p {
-    @extend %bloque-descripcion;
-    background-color: rgb(75, 192, 221);
-  }
-
-  
-  
   .title_child-h1 {
     width: 700px;
   }
     
   .title_child-h1 {
     animation: titulo 1s;
-    
   } 
   
-  @keyframes titulo {
-    0% {
-      opacity: 0;
-      transform: translateY(-2000px);
-      }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-      }
-  }
+/*ANIMACIONES*/
+
+@keyframes titulo {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+/*MEDIA QUERYS*/
 
   @media (max-width: 780px) {
     .Father_Espacio {
       display: inline;
+      height: 400px;
+      width: none;
+
+      .child_Espacio {
+        width: 100%;
+        height: 400px;
+      }
 
       .child_Espacio-empresa {
         width: 100%;
-        height: 500px;
-
-        .Espacio_div-img {
-
-          .child_ImgIzq {
-            width: 350px;
-            height: 300px;
-          }
-        }
-
-        .Espacio_h2 {
-          margin: 0px;
-          position: relative;
-          top: 25px
-        }
+        height: 400px;
       }
-      .Espacio_div-img {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           height: 400px;
-         } 
-          .child_ImgDere {
-            width: 350px;
-            height: 300px;
-          }
 
-      .child_Espacio-p, .child_Espacio2-p, .child_Espacio3-p, .child_Espacio4-p {
+      .Espacio_div-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;   
+      }
+
+      .child_Espacio-p {
         width: 100%;
-        height: 500px;
       }
     }
+
     h1.title_child-h1 {
       width: 350px;
     }
   }
-  @media (max-width: 1050px) {
-
-    .child_ImgDere {
-        width: 350px;
-        height: 300px;
-    }
-  }
+  
 
  @media (max-width: 1050px) {
     .Father_Espacio {
@@ -189,9 +167,10 @@
 
         .Espacio_div-img {
 
-          .child_ImgIzq {
-            width: 350px;
-            height: 300px;
+          .child_ImgIzq, .child_ImgDere {
+            width: 310px;
+            height: 260px;
+
           }
         }
       }

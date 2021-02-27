@@ -6,6 +6,23 @@
   align-items: center
 }
 
+%BgColor {
+  background-color: rgb(1,45,84);
+}
+
+.pri:hover {
+  animation: princi 1s;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  opacity: 0.6;
+}
+
+body {
+  @extend %BgColor;
+}
+
 p { 
     line-height: 1.5;
 }
@@ -15,12 +32,10 @@ p {
 }
   
 
-  
-
 .principal {
     height: 200px;
     flex-direction: column;
-    background-color: rgb(1,45,84);
+    @extend %BgColor;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -42,17 +57,56 @@ p {
   border-bottom: 4px solid #fff;
 }
 
-.pri:hover {
-  animation: princi 1s;
+.card.h-100 {
+  border: none;
 }
 
-.card:hover {
-  transform: scale(1.1);
-  opacity: 0.6;
+
+.container-cards {
+  @extend %BgColor;
+
+  .card-body {
+    @extend %BgColor;
+    color: #fff;
+
+    .card-title {
+      text-align: center;
+    }
+
+  }
+
 }
+
+.botonCarrucel {
+  width: 2rem;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 0.0;
+}
+
+
 
 .container-Juntos {
   margin: 100px 0px;
+  color: #fff;
 }
 
 .JuntosPodemos, .col {
@@ -70,6 +124,7 @@ p {
 .Juntos-btn {
   @extend %CentrarContenido;
   width: 100%;
+  margin-top: 13px;
 
   .btn {
     width: 200px;
@@ -94,4 +149,10 @@ p {
 
 .imgRedes {
   margin: 0px 5px;
+}
+
+@media (max-width:347px) {
+  .pri {
+    border-bottom: none;
+  }
 }

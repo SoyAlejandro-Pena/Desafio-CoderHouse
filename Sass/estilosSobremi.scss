@@ -1,5 +1,8 @@
 @import "barraDeNavegacion";
 @import "footer";
+
+/*MIXIN Y DEMÁS*/
+
 %display-centrar {
   display: flex;
   justify-content: center;
@@ -11,8 +14,22 @@
 }
 $margin: 10px;
  
+/*HOVER*/
+
+.barraDeProgreso:hover {
+
+  background-color: #F2F2F2;
+
+  .iconsEstrellas {
+    transform: translate(-10px, 0px);
+  }
+}
+
+/*COMIENZA EL ESTILO*/
+
 p { 
     line-height: 1.5;
+    width: 90%;
   }
   
 main {
@@ -20,7 +37,7 @@ main {
   }
 
 .presentacion {
-  height: 600px;
+  height: 730px;
   @extend %display-centrar;
     h1 {
       width: 80%;
@@ -35,10 +52,10 @@ main {
 }
 
 .yo {
-  margin: 30px 0px;
-  background-color: #fff;
+  height: 800px;
+  margin-bottom: 30px;
+  background-color: rgb(230, 229, 204);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
         "title title title"
         "izquierda centro derecha";
@@ -46,8 +63,9 @@ main {
   column-gap: 15px;
 
     p {
-      margin: 30px;
+      margin: 15px 30px;
     }
+
 }
 
 .yo_child_nombre { 
@@ -72,39 +90,68 @@ main {
 
 .yo_childIzquierda {
   grid-area: izquierda;
-
-    h2 {
-      margin: $margin;
-      text-align: center
-    }
-}
-
-.yo_childIzquierda h2 {
-  text-align: center;
-}
-
-.yo_childCentro {
-  grid-area: centro;
-  text-align: center;
-
-    h4 {
-      margin: 20px 0px 20px 0px;
-    }
-    img {
-      margin-top: 5px;
-      height: 250px;
-      width: 250px;
-      border-radius: 50%;
-    }
-}
-
-.yo_childDerecha {
-  grid-area: derecha;
+  text-align: justify;
 
     h2 {
       margin: $margin;
       text-align: center;
     }
+
+    hr {
+      width: 50%;
+      margin: auto;
+    }
+}
+
+.yo_childCentro {
+  grid-area: centro;
+  text-align: center;
+  margin-bottom: 80px;
+
+    h4 {
+      margin: 20px 0px 20px 0px;
+    }
+    
+    img {
+      margin-top: 5px;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+  }
+}
+
+
+.yo_childDerecha {
+    grid-area: derecha;
+    margin-bottom: 20px;
+
+  h2 {
+    margin: $margin;
+    text-align: center;
+  }
+
+  .habilidadesProfesionales {
+    margin: 50px;
+
+    .barraDeProgreso {
+      display: flex;
+  
+      .barraDeProgreso-text {
+        width: 50%;
+        margin: 2px 0px;
+      }
+  
+      .iconsEstrellas {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+      }
+  
+    }
+
+  }
+
 }
 
 .presentacion_texto {
@@ -125,12 +172,14 @@ main {
   height: 100px;
   font-size: 20px;
   @extend %display-centrar;
-  margin-top: -40px;
+  margin-top: -70px;
 }
 
 .UnPocoMasDeMi-title {
   padding: 15px;
 }
+
+/*KEYFRAMES*/
 
 @keyframes titulo {
   0% {
@@ -143,9 +192,22 @@ main {
   }
 }
   
-@media (max-width:750px) {
+
+/*MEDIAQUERYS*/
+
+@media (max-width:1000px) {
+
+  .presentacion {
+    height: 650px;
+  }
+
   .yo {
     display: flex;
     flex-direction: column;
+    height: auto;
+  }
+
+  p {
+    width: auto;
   }
 }

@@ -1,5 +1,5 @@
 .container-footer {
-    background-color: rgb(1,45,84);
+    background-color: rgb(21, 113, 169);
     color: #fff;
     margin-top: 10px;
 
@@ -7,6 +7,15 @@
       margin-top: 10px;
       }
 }
+
+.row.row-footer {
+    column-gap: 20px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
 @media (max-width:  577px) {
     .row-footer {
         text-align: center;
