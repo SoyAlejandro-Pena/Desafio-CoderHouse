@@ -26,28 +26,35 @@
 </head>
 
 <body>
-  <header>
-    <div class="menu">
-      <div>
-        <ul>
-          <li class="menuEdit">
-            <a href="index.html"> Home </a>
-          </li>
-          <li>
-            <a href="SobreMi.html">Sobre mi</a>
-          </li>
-          <li>
-            <a href="Experiencia.html">Experiencia</a>
-          </li>
-          <li>
-            <a href="Portafolio.html">Portafolio</a>
-          </li>
-          <li>
-            <a href="Contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <header>   
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+          <div class="collapse navbar-collapse  menu" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item menuEdit">
+                <a class="nav-link" aria-current="page" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="SobreMi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Experiencia.html">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
       </div>
-    </div>
+    </nav>
   </header>
   <main>
   <div class="container">
@@ -60,7 +67,7 @@
     </div>
   </div>
     <div class="container">
-      <div class="row Hola">
+      <div class="row">
         <div class="col-sm-12 col-lg-6 SaberMas">
             <h2>
               SERÁ TODO UN GUSTO TRABAJAR CONTIGO.
@@ -76,50 +83,52 @@
         </div> 
 
         <div class="col-sm-12 col-lg-6">
-          <form action="" class="">
-            <fieldset> 
-              <div class="form-group">
-                <label for="Nombre"> Nombre/s </label>
-                <input class="form-control" type="name" id="Nombre">
-              </div>
+          <div>
+            <form action="" class="formulario">
+              <fieldset> 
+                <div class="form-group">
+                  <label for="Nombre"> Nombre/s </label>
+                  <input class="form-control" type="name" id="Nombre">
+                </div>
 
-              <div class="form-group">
-                <label for="Apellidos"> Apellidos </label>
-                <input class="form-control" type="name" id="Apellidos">
-              </div>
+                <div class="form-group">
+                  <label for="Apellidos"> Apellidos </label>
+                  <input class="form-control" type="name" id="Apellidos">
+                </div>
 
-              <div class="form-group">
-                <label for="Email"> Email </label> 
-                <input class="form-control" type="email" id="Email" required placeholder="usuario@ejemplo.com">
-              </div>
+                <div class="form-group">
+                  <label for="Email"> Email </label> 
+                  <input class="form-control" type="email" id="Email" required placeholder="usuario@ejemplo.com">
+                </div>
 
-              <div class="form-group">
-                <label for="Contacto"> Contacto </label>
-                <input class="form-control" type="name" id="Contacto">
-              </div>
+                <div class="form-group">
+                  <label for="Contacto"> Contacto </label>
+                  <input class="form-control" type="name" id="Contacto">
+                </div>
 
-              <div class="form-group">
-                <label for="Pais"> País </label>
-                <input class="form-control" type="name" id="Pais" placeholder="¿Dónde vives?">
-              </div>
+                <div class="form-group">
+                  <label for="Pais"> País </label>
+                  <input class="form-control" type="name" id="Pais" placeholder="¿Dónde vives?">
+                </div>
 
-              <div class="form-group">
-                <label for="EterasteDeMi"> ¿Cómo te eteraste de mí? </label>
-                <input class="form-control" type="name" id="EterasteDeMi">
-              </div>
+                <div class="form-group">
+                  <label for="EterasteDeMi"> ¿Cómo te eteraste de mí? </label>
+                  <input class="form-control" type="name" id="EterasteDeMi">
+                </div>
 
-              <div class="form-group">
-                <label for="Negocio"> ¿Nombre de tú negocio? </label>
-                <input class="form-control" type="name" id="Negocio">
-              </div>
+                <div class="form-group">
+                  <label for="Negocio"> ¿Nombre de tú negocio? </label>
+                  <input class="form-control" type="name" id="Negocio">
+                </div>
 
-              <div class="form-group">
-                <label for="mensajeTexto"> Cuentame un poco de lo que buscas. Procura ser especifico para ayudarte de la mejor manera. </label>
-                <textarea class="form-control" id="mensajeTexto"></textarea>
-              </div>
+                <div class="form-group">
+                  <label for="mensajeTexto"> Cuentame un poco de lo que buscas. Procura ser especifico para ayudarte de la mejor manera. </label>
+                  <textarea class="form-control" id="mensajeTexto"></textarea>
+                </div>
 
-              <button class="btn btn-primary"> <span> Enviar </span> </button>
-          </form>
+                <button class="btn btn-primary"> <span> Enviar </span> </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

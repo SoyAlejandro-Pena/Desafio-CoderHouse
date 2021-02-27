@@ -27,42 +27,115 @@
 </head>
 
 <body>
-  <header>
-    <div class="menu">
-      <div>
-        <ul>
-          <li class="menuEdit">
-            <a href="index.html"> Home </a>
-          </li>
-          <li>
-            <a href="SobreMi.html">Sobre mi</a>
-          </li>
-          <li>
-            <a href="Experiencia.html">Experiencia</a>
-          </li>
-          <li>
-            <a href="Portafolio.html">Portafolio</a>
-          </li>
-          <li>
-            <a href="Contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
 
+  <!--**HEADER**-->
+  <header>   
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid ">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+          <div class="collapse navbar-collapse  menu" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item menuEdit">
+                <a class="nav-link" aria-current="page" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="SobreMi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Experiencia.html">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
     <div class="principal">
         <h1 class="pri"> 
           Ultimos <span class="principal_span"> proyectos. </span>
         </h1>
     </div>
     
-    <div class="cotainer">
+    <div class="container-cards">
       <div class="row row-cols-1 row-cols-md-3 g-4 g-lg-3">
+        
+        <!--PRIMERA CARD-->
+        <div class="col">
+          <div class="card h-100">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/card1imagen1.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/card1imagen2.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/card1imagen3.JPG" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Trabajo autónomo</h5>
+              <p class="card-text">Esta es mi primera página web en internet. Fue parte de mi proyecto final en la carrera de desarrollo Web en CoderHouse.</p>
+              <a href="https://diego-pena-programador1.000webhostapp.com" target="_BLANK" class="btn">Ver más.</a>
+            </div>
+          </div>
+        </div>
+
+        <!--SEGUNDA CARD-->
         <div class="col">
           <div class="card h-100" >
-            <img src="Imagenes/HolaM.jpg" class="card-img-top" alt="Empresa Tal">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Nombre Compañía</h5>
               <p class="card-text">Aquí una breve descripción del proyecto realizado</p>
@@ -70,9 +143,36 @@
             </div>
           </div>
         </div>
+
+        <!--TERCERA CARD-->
         <div class="col">
           <div class="card h-100" >
-            <img src="Imagenes/HolaM.jpg" class="card-img-top" alt="Empresa Tal">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Nombre Compañía</h5>
               <p class="card-text">Aquí una breve descripción del proyecto realizado</p>
@@ -80,9 +180,36 @@
             </div>
           </div>
         </div>
+        
+        <!--CUARTA CARD-->
         <div class="col">
           <div class="card h-100" >
-            <img src="Imagenes/HolaM.jpg" class="card-img-top" alt="Empresa Tal">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Nombre Compañía</h5>
               <p class="card-text">Aquí una breve descripción del proyecto realizado</p>
@@ -90,9 +217,36 @@
             </div>
           </div>
         </div>
+
+        <!--QUINTA CARD--> 
         <div class="col">
           <div class="card h-100" >
-            <img src="Imagenes/HolaM.jpg" class="card-img-top" alt="Empresa Tal">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Nombre Compañía</h5>
               <p class="card-text">Aquí una breve descripción del proyecto realizado</p>
@@ -100,19 +254,36 @@
             </div>
           </div>
         </div>
+
+        <!--SEXTA CARD-->
         <div class="col">
           <div class="card h-100" >
-            <img src="Imagenes/HolaM.jpg" class="card-img-top" alt="Empresa Tal">
-            <div class="card-body">
-              <h5 class="card-title">Nombre Compañía</h5>
-              <p class="card-text">Aquí una breve descripción del proyecto realizado</p>
-              <a href="#" class="btn">Ver más.</a>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="botonCarrucel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagenes/HolaM.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" >
-            <img src="Imagenes/HolaM.jpg" class="card-img-top" alt="Empresa Tal">
             <div class="card-body">
               <h5 class="card-title">Nombre Compañía</h5>
               <p class="card-text">Aquí una breve descripción del proyecto realizado</p>
@@ -122,6 +293,7 @@
         </div>
       </div> 
     </div>
+    
 
     <!--**Espacio que lleva a contacto**-->
 

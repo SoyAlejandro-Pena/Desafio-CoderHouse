@@ -26,30 +26,38 @@
 </head>
 
 <body>
-  <header>
-    <div class="menu">
-      <div>
-        <ul>
-          <li class="menuEdit">
-            <a href="index.html"> Home </a>
-          </li>
-          <li>
-            <a href="SobreMi.html">Sobre mi</a>
-          </li>
-          <li>
-            <a href="Experiencia.html">Experiencia</a>
-          </li>
-          <li>
-            <a href="Portafolio.html">Portafolio</a>
-          </li>
-          <li>
-            <a href="Contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <header>   
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid ">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+          <div class="collapse navbar-collapse  menu" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item menuEdit">
+                <a class="nav-link" aria-current="page" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="SobreMi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Experiencia.html">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
       </div>
-    </div>
+    </nav>
   </header>
   <main>
+    <!--**COMEINZO DE LA PÁGINA | INTRODUCCIÓN NOMBRE**-->
     <div class="presentacion">
       <div class="animate__animated animate__fadeInLeftBig presentacion_texto">
         <h4 class="presentacion_texto-h4">
@@ -61,6 +69,7 @@
       </div>
     </div>
 
+    <!-- **ZONA PERSONAL**-->
     <div class="yo">
       <div class="yo_child_nombre">
         <div class="yo_child_nombre-div">
@@ -70,31 +79,142 @@
           <hr>
         </div>
       </div>
+      
       <div class="yo_childIzquierda">
         <h2> Educación </h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repellendus deserunt iste facilis rerum dolore, veritatis veniam voluptas neque placeat tenetur magni inventore sed, asperiores consequuntur? Numquam dolorem, voluptas assumenda, qui ab perferendis nemo repellendus consequatur, maiores ullam aliquam enim! </p>
+        <p> <strong> Desarrollo Web FrontEnd</strong> - CoderHouse | Actualmente </p>
+        <p> Aquí estoy aprendiendo las técnicas de la programación desde el principio, llegando a conseguir conocimientos solidos en <strong>HTML, CSS, SASS, Bootstrap, SEO, JQuerys, JavaScript, React.js, Git,</strong> entre otros. </p>
+        <hr>
+        <p> <strong> Desarrollo Web  con HTML y CSS </strong> - Domestika | Agosto - Noviembre 2020 </p>
+        <p> Este curso se trata en abordar por primera vez el desarrollo web. El enfoque del curso es enseñar bases en <strong>HTML y CSS</strong> </p> 
+        
       </div>
       <div class="yo_childCentro">
-          <img src="Imagenes/Diego Peña.PNG" alt="Diego Peña" class="imgDiegoPeña">
+          <img src="Imagenes/Diego Peña.jpg" alt="Diego Peña" class="imgDiegoPeña">
           <h4>
             Desarrollador FrontEnd
           </h4>
           <p> 
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicing elit. At cumque perferendis 
-            impedit, ipsam mollitia ducimus eaque adipisci.
-            Nam quia ad cumque nulla possimus voluptatum inventore 
-            ex quod neque voluptatem placeat provident, adipisci
-            distinctio unde animi deserunt at officia quaerat
-            necessitatibus.
+            Soy un desarrollador web integral. Soy un programador con buen conocimiento de las técnicas de front-end. Me gusta el trabajo en equipo, dedicar tiempo en la optimización de calidad de páginas web y app.
           </p>
       </div>
+
       <div class="yo_childDerecha">
-        <h2> Habilidades personales </h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur recusandae corporis non cumque veniam nulla est ullam sequi, voluptate, eveniet dicta, enim obcaecati labore. Nulla, laboriosam dolores! Aut inventore laborum eos necessitatibus, repellendus exercitationem nobis earum maiores! Impedit, earum culpa. </p>
+        <h2> Habilidades profesionales </h2>
+        <div class="habilidadesProfesionales">
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+               Inglés 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             HTML 5 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             CSS 3 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             SASS/SCSS 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             Bootstrap 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             SEO 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             MediaQuery´s 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             JavaScript 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+            </div>
+          </div>
+          <div class="barraDeProgreso">
+            <div class="barraDeProgreso-text">
+             React.js 
+            </div> 
+            <div class="iconsEstrellas">
+              <img src="Imagenes/estrella rellena.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+              <img src="Imagenes/estrella.png" alt="Estrella">
+            </div>
+          </div>
+        </div>   
       </div>
     </div>
 
+    <!-- **ZONA MÁS SOBRE MI-->
     <div class="container Conoce">
       <div class="row text-center">
         <div class="col-sm"> 
@@ -193,18 +313,9 @@
         </div>
       </div>
     </div> 
-
-
-        <!--
-    <ul class="nav nav-pills vav-justified">
-      <li class=""></li>
-      <li></li>
-      <li></li>
-      <li></li>
-
-    </ul>
-    -->
   </main>
+
+  <!-- **FOOTER-->
   <footer>
     <div class="container-footer">
       <div class="row row-footer">
@@ -220,7 +331,6 @@
             <a href="http://www.linkedin.com/in/Diego-Alejandro-Peña-Farfan/" target="_BLANK"> <img src="Imagenes/linkedin.png" alt="LinkedIn" class="imgRedes"> </a>
             <h6>  Política de provacidad </h6>
           </div>
-        </div>
       </div>
     </div>
   </footer>
