@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * { padding: 0px; margin: 0px; font-family: 'Amaranth', sans-serif; }
 
 div { letter-spacing: 1px; }
@@ -10,9 +11,13 @@ a:link { color: #fff; text-decoration: none; }
 
 a:visited:hover { color: #fff; }
 
+.navbar-light .navbar-toggler-icon { background-image: url(../../Imagenes/menu.png); }
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { color: #fff; text-decoration: line-through; }
+
 .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-header { background-color: #1571a9; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
+header { background-color: #012d54; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
 
 .navbar-light .navbar-nav .nav-link { color: #fff; }
 
@@ -33,31 +38,42 @@ ul li:hover ul { display: block; }
 @media (max-width: 600px) { ul { padding-left: 0; }
   ul li { font-size: 15px; } }
 
-@media (max-width: 575px) { .navbar { padding-bottom: 0.5rem; padding-top: 0.5rem; } }
+@media (max-width: 768px) { .navbar { padding-bottom: 0.5rem; padding-top: 0.5rem; } }
 
-.container-footer { background-color: #012d54; color: #fff; margin-top: 10px; }
+.container-footer { background-color: #1571a9; color: #fff; margin-top: 10px; }
 
 .container-footer h6 { margin-top: 10px; }
 
+.row.row-footer { -webkit-column-gap: 20px; column-gap: 20px; }
+
+.row { --bs-gutter-x: 0; }
+
 @media (max-width: 577px) { .row-footer { text-align: center; } }
 
+/*MIXIN Y DEMÁS*/
 .presentacion, .yo_child_nombre, .Conoce { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .yo_child_nombre h1, .yo_child_nombre h4 { color: #000; text-align: center; }
 
-p { line-height: 1.5; }
+/*HOVER*/
+.barraDeProgreso:hover { background-color: #F2F2F2; }
+
+.barraDeProgreso:hover .iconsEstrellas { -webkit-transform: translate(-10px, 0px); transform: translate(-10px, 0px); }
+
+/*COMIENZA EL ESTILO*/
+p { line-height: 1.5; width: 90%; }
 
 main { background-color: #012d54; }
 
-.presentacion { height: 600px; }
+.presentacion { height: 730px; }
 
 .presentacion h1 { width: 80%; margin: auto; }
 
 .presentacion_texto-h4, .presentacion_texto-h1 { text-align: center; color: #ffffff; text-transform: uppercase; }
 
-.yo { margin: 30px 0px; background-color: #fff; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr; grid-template-areas: "title title title" "izquierda centro derecha"; row-gap: 15px; -webkit-column-gap: 15px; column-gap: 15px; }
+.yo { height: 800px; margin-bottom: 30px; background-color: #e6e5cc; display: -ms-grid; display: grid; grid-template-areas: "title title title" "izquierda centro derecha"; row-gap: 15px; -webkit-column-gap: 15px; column-gap: 15px; }
 
-.yo p { margin: 30px; }
+.yo p { margin: 15px 30px; }
 
 .yo_child_nombre { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 3; grid-area: title; }
 
@@ -65,21 +81,29 @@ main { background-color: #012d54; }
 
 .yo_child_nombre h1 { padding-top: 20px; }
 
-.yo_childIzquierda { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: izquierda; }
+.yo_childIzquierda { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: izquierda; text-align: justify; }
 
 .yo_childIzquierda h2 { margin: 10px; text-align: center; }
 
-.yo_childIzquierda h2 { text-align: center; }
+.yo_childIzquierda hr { width: 50%; margin: auto; }
 
-.yo_childCentro { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: centro; text-align: center; }
+.yo_childCentro { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: centro; text-align: center; margin-bottom: 80px; }
 
 .yo_childCentro h4 { margin: 20px 0px 20px 0px; }
 
 .yo_childCentro img { margin-top: 5px; height: 250px; width: 250px; border-radius: 50%; }
 
-.yo_childDerecha { -ms-grid-row: 2; -ms-grid-column: 3; grid-area: derecha; }
+.yo_childDerecha { -ms-grid-row: 2; -ms-grid-column: 3; grid-area: derecha; margin-bottom: 20px; }
 
 .yo_childDerecha h2 { margin: 10px; text-align: center; }
+
+.yo_childDerecha .habilidadesProfesionales { margin: 50px; }
+
+.yo_childDerecha .habilidadesProfesionales .barraDeProgreso { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.yo_childDerecha .habilidadesProfesionales .barraDeProgreso .barraDeProgreso-text { width: 50%; margin: 2px 0px; }
+
+.yo_childDerecha .habilidadesProfesionales .barraDeProgreso .iconsEstrellas { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 40%; }
 
 .presentacion_texto { -webkit-animation: titulo 1s; animation: titulo 1s; }
 
@@ -87,17 +111,17 @@ main { background-color: #012d54; }
 
 .especialidad_text { margin-top: 20px; }
 
-.Conoce { background-color: #4bc0dd; height: 100px; font-size: 20px; margin-top: -40px; }
+.Conoce { background-color: #4bc0dd; height: 100px; font-size: 20px; margin-top: -70px; }
 
 .UnPocoMasDeMi-title { padding: 15px; }
 
+/*KEYFRAMES*/
 @-webkit-keyframes titulo { 0% { opacity: 0;
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px); }
   100% { opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
-
 @keyframes titulo { 0% { opacity: 0;
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px); }
@@ -105,5 +129,8 @@ main { background-color: #012d54; }
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@media (max-width: 750px) { .yo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+/*MEDIAQUERYS*/
+@media (max-width: 1000px) { .presentacion { height: 650px; }
+  .yo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: auto; }
+  p { width: auto; } }
 /*# sourceMappingURL=estilosSobremi.css.map */

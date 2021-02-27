@@ -10,9 +10,13 @@ a:link { color: #fff; text-decoration: none; }
 
 a:visited:hover { color: #fff; }
 
+.navbar-light .navbar-toggler-icon { background-image: url(../../Imagenes/menu.png); }
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { color: #fff; text-decoration: line-through; }
+
 .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-header { background-color: #1571a9; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
+header { background-color: #012d54; position: -webkit-sticky; position: sticky; top: 0px; width: 100%; z-index: 3000; }
 
 .navbar-light .navbar-nav .nav-link { color: #fff; }
 
@@ -33,37 +37,55 @@ ul li:hover ul { display: block; }
 @media (max-width: 600px) { ul { padding-left: 0; }
   ul li { font-size: 15px; } }
 
-@media (max-width: 575px) { .navbar { padding-bottom: 0.5rem; padding-top: 0.5rem; } }
+@media (max-width: 768px) { .navbar { padding-bottom: 0.5rem; padding-top: 0.5rem; } }
 
-.container-footer { background-color: #012d54; color: #fff; margin-top: 10px; }
+.container-footer { background-color: #1571a9; color: #fff; margin-top: 10px; }
 
 .container-footer h6 { margin-top: 10px; }
+
+.row.row-footer { -webkit-column-gap: 20px; column-gap: 20px; }
+
+.row { --bs-gutter-x: 0; }
 
 @media (max-width: 577px) { .row-footer { text-align: center; } }
 
 .Juntos-btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
+body, .principal, .container-cards, .container-cards .card-body { background-color: #012d54; }
+
+.pri:hover { -webkit-animation: princi 1s; animation: princi 1s; }
+
+.card:hover { -webkit-transform: scale(1.04); transform: scale(1.04); opacity: 0.6; }
+
 p { line-height: 1.5; }
 
 .btn { background-color: #4bc0dd; }
 
-.principal { height: 200px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-color: #012d54; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.principal { height: 200px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .pri { color: #fff; font-size: 40px; margin: 14px 0px; border-bottom: 2px solid rgba(0, 255, 255, 0.959); padding-bottom: 10px; }
 
 .principal_span { color: rgba(0, 255, 255, 0.959); padding-bottom: 9px; border-bottom: 4px solid #fff; }
 
-.pri:hover { -webkit-animation: princi 1s; animation: princi 1s; }
+.card.h-100 { border: none; }
 
-.card:hover { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: 0.6; }
+.container-cards .card-body { color: #fff; }
 
-.container-Juntos { margin: 100px 0px; }
+.container-cards .card-body .card-title { text-align: center; }
+
+.botonCarrucel { width: 2rem; margin-left: 3px; margin-right: 3px; }
+
+.carousel-indicators { position: absolute; right: 0; bottom: 0; left: 0; z-index: 2; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 0; margin-right: 15%; margin-bottom: 1rem; margin-left: 15%; list-style: none; }
+
+.carousel-control-next, .carousel-control-prev { opacity: 0.0; }
+
+.container-Juntos { margin: 100px 0px; color: #fff; }
 
 .JuntosPodemos, .col { margin-top: 40px; padding: 0px 30px; }
 
 .JuntosPodemos .JuntosAsombroso, .col .JuntosAsombroso { max-width: 500px; font-size: 65px; text-align: center; margin: auto; }
 
-.Juntos-btn { width: 100%; }
+.Juntos-btn { width: 100%; margin-top: 13px; }
 
 .Juntos-btn .btn { width: 200px; height: 50px; font-size: 20px; }
 
@@ -76,4 +98,6 @@ p { line-height: 1.5; }
   to { -webkit-transform: scale(1.1); transform: scale(1.1); } }
 
 .imgRedes { margin: 0px 5px; }
+
+@media (max-width: 347px) { .pri { border-bottom: none; } }
 /*# sourceMappingURL=EstilosPortafolio.css.map */
